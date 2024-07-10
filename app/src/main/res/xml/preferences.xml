@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="categoryOne"
+        android:title="General">
+
+        <SwitchPreferenceCompat
+            android:key="notificationSwitch"
+            android:shadowColor="#0df10d"
+            android:summary="Enable or disable notifications"
+            android:title="Notification" />
+
+        <ListPreference
+            android:key="NotificationDay"
+            android:entryValues="@array/Notification_Day"
+            android:entries="@array/Notification_Day"
+            android:title="Notification Day"
+            android:dependency="notificationSwitch"
+            app:useSimpleSummaryProvider="true"/>
+
+        <com.example.personalizedinventorycontrolapp.TimePreference
+            android:key="NotificationTime"
+            android:defaultValue="0"
+            android:dependency="notificationSwitch"
+            app:negativeButtonText="Cancel"
+            app:positiveButtonText="OK"
+            android:layout="@layout/preference_layout"
+            android:title="Notification Time"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="prefCategoryTwo"
+        android:title="Family Settings" >
+
+        <Preference
+            android:key="familyAccountLink"
+            android:title="Family Accounts Linkage">
+        <intent
+            android:targetPackage="com.example.personalizedinventorycontrolapp"
+            android:targetClass="com.example.personalizedinventorycontrolapp.EditFamilyAccountLinkageActivity"/>
+    </Preference>
+
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

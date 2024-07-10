@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/restockItemImage"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutForItemInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/restockItemImage">
+
+            <RelativeLayout
+                android:id="@+id/relativelayoutForNameAndManufacture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/restockItemNameRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/restockItemNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:labelFor="@+id/restockItemName"
+                        android:maxLines="1"
+                        android:text="@string/item_name_ShoppingList_layout"
+                        android:textColor="#C1F8B0B0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restockItemName"
+                        android:layout_toEndOf="@+id/restockItemNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restockItemNameRelativeLayout"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/restockItemManufactureLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:labelFor="@+id/restockItemName"
+                        android:maxLines="1"
+                        android:text="@string/manufacture_ShoppingList_layout"
+                        android:textColor="#C1F8B0B0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restockItemManufacture"
+                        android:layout_toEndOf="@+id/restockItemManufactureLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayoutForPriceAndQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/relativelayoutForNameAndManufacture"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/restockItemPriceRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/restockItemPriceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:labelFor="@+id/restockItemPrice"
+                        android:maxLines="1"
+                        android:text="@string/price_ShoppingList_layout"
+                        android:textColor="#C1F8B0B0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restockItemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/restockItemPriceLabel"
+                        android:paddingStart="5dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/restockItemPriceRelativeLayout"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/restockItemQuantityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:labelFor="@+id/restockItemQuantity"
+                        android:maxLines="1"
+                        android:text="@string/quantity_ShoppingList_layout"
+                        android:textColor="#C1F8B0B0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restockItemQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/restockItemQuantityLabel"
+                        android:paddingStart="5dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutPlusMinusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/relativelayoutForItemInfo">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonPlusItem"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_baseline_add_box_24"
+                android:contentDescription="@string/add_quantity_item_detail"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMinusItem"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/imageButtonPlusItem"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_baseline_indeterminate_check_box_24"
+                android:contentDescription="@string/minus_quantity_item_detail"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButtonEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/relativelayoutPlusMinusButton"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:contentDescription="@string/edit_shopping_list_item"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/relativelayoutPlusMinusButton"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_baseline_check_24"
+            android:contentDescription="@string/edit_shopping_list_item"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

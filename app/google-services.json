@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "258619375526",
+    "project_id": "inventorysystemfcm",
+    "storage_bucket": "inventorysystemfcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258619375526:android:3c75132e37b6a75bcc1967",
+        "android_client_info": {
+          "package_name": "com.example.personalizedinventorycontrolapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258619375526-solk7umlapng1amkap1r82dj1is05qeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQp3tTGUlUw1O61n6G12_rF3yY27BLaSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258619375526-solk7umlapng1amkap1r82dj1is05qeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
